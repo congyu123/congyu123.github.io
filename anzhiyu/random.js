@@ -1,3 +1,3 @@
-var posts=["2024/09/03/tvm_compile/","2024/09/03/My-New-Post/","2024/09/03/hello-world/"];function toRandomPost(){
+var posts=["2024/09/03/My-New-Post/","2024/09/03/hello-world/","2024/09/03/C++函数/","2024/09/03/python while循环/","2024/09/03/C++基本语法/","2024/09/03/python函数/","2024/09/03/python列表的定义：/","2024/09/03/python基础语法/","2024/09/03/python条件和if语句/","2024/09/03/python的for循环/","2024/09/03/python运算符/","2024/09/03/tvm_compile/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
