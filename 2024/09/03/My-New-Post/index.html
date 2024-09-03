@@ -1,45 +1,537 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>计算机网络概述 | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="计算机网络概述"><meta name="application-name" content="计算机网络概述"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="计算机网络概述"><meta property="og:url" content="http://example.com/2024/09/03/My-New-Post/index.html"><meta property="og:site_name" content="Hexo"><meta property="og:description" content="计算机网络概述计算机网络由若干节点和连接这些节点的链路组成网络中的节点可以是计算机、集线器、交换机和路由器等 网络把许多计算机连接在一起，而互联网则把许多网络通过路由器连接在一起，与网络相连的计算机通常称之为主机 互联网的组成边缘部分：所有连接在互联网上的主机组成这部分是用户直接使用的，用来进行通信"><meta property="og:locale" content="en"><meta property="og:image" content="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg"><meta property="article:author" content="John Doe"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg"><meta name="description" content="计算机网络概述计算机网络由若干节点和连接这些节点的链路组成网络中的节点可以是计算机、集线器、交换机和路由器等 网络把许多计算机连接在一起，而互联网则把许多网络通过路由器连接在一起，与网络相连的计算机通常称之为主机 互联网的组成边缘部分：所有连接在互联网上的主机组成这部分是用户直接使用的，用来进行通信"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="http://example.com/2024/09/03/My-New-Post/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: {"enable":true,"img":"https://upload-bbs.miyoushe.com/upload/2023/09/03/125766904/ee23df8517f3c3e3efc4145658269c06_5714860933110284659.png"},
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: undefined,
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"Author: John Doe","link":"Link: ","source":"Source: Hexo","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.","copySuccess":"Copy success, copy and reprint please mark the address of this article"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'Hexo',
+  title: '计算机网络概述',
+  postAI: '',
+  pageFillDescription: '计算机网络概述, 互联网的组成, 计算机网络的功能, 互联网的核心部分, 电路交换, 报文交换, 分组交换, 计算机网络的性能指标, 带宽（Bandwidth）, 吞吐量（Throughput）, 时延（Latency）, 时延带宽积：, 计算机网络分层结构, 计算机网络协议、接口、服务的概念, 协议, 接口, 服务, OSIx2FISO参考模型和TCPx2FIP模型, 定义, 七层结构, TCPx2FIP模型, 定义, 四层结构, 对比与联系, 相似点, 不同点, 实例解释, 发送电子邮件的过程计算机网络概述计算机网络由若干节点和连接这些节点的链路组成网络中的节点可以是计算机集线器交换机和路由器等网络把许多计算机连接在一起而互联网则把许多网络通过路由器连接在一起与网络相连的计算机通常称之为主机互联网的组成边缘部分所有连接在互联网上的主机组成这部分是用户直接使用的用来进行通信和资源共享核心部分为边缘部分提供服务由大量网络和连接这些网络的路由器组成计算机网络的功能数据通信资源共享分布式处理提高可靠性负载均衡互联网的核心部分互联网核心部分起重要作用的是路由器它对收到的分组进行储存转发来实现分组交换首先学习电路交换电路交换类比打电话想象你在打电话你拨打某人的号码后电话公司会在你们之间建立一条专用的线路这条线路在通话过程中完全属于你们其他人无法使用通话结束后这条线路才会释放实现步骤连接建立在通信开始前需要建立一个专用的通道数据传输一旦连接建立通信双方就有一个固定的专用的路径进行数据传输这个过程数据是持续传输的连接释放通信结束后释放专用的通道电路交换的优点是通信过程中不会有延迟因为线路是专用的但缺点是资源利用率低因为即使没有数据传输线路也被占用报文交换数据交换的单位是报文用户数据加上源地址目的地址等信息后封装成报文类比邮寄包裹假设你要邮寄一个大包裹你将包裹寄到邮局邮局会根据包裹的目的地将它转发到下一个邮局直到最终到达收件人这过程中包裹可能会在各个邮局停留等待处理实现步骤采用存储转发技术存储和转发报文在每个节点上被完全接收存储然后再转发到下一个节点动态路由选择每个节点根据当前的网络情况决定报文的下一跳路径报文交换的优点是灵活可以根据网络情况动态选择路径适合传输较大数据块但缺点是延迟较大因为每个节点需要存储和处理整个报文分组交换分组交换也采用存储转发的技术但解决了报文过长的问题类比发送电子邮件假设你要发送一封长电子邮件你将邮件拆分成多个小段称为分组每个分组独立发送这些分组可能通过不同的路径到达收件人收件人将这些分组重新组合成完整的邮件实现步骤数据拆分将数据分割成较小的分组每个分组独立传输独立传输分组独立地在网络中传输可以通过不同的路径到达目的地重组在目的地分组按序号重新组合成完整的数据计算机网络的性能指标带宽类比高速公路的车道数量带宽是指单位时间内网络可以传输的数据量通常以比特每秒千比特每秒兆比特每秒等表示就像高速公路的车道数量决定了同时可以通过的车辆数量带宽决定了同时可以传输的数据量带宽越大网络可以传输的数据量就越多吞吐量类比高速公路上的实际车流量吞吐量是实际通过网络的数据传输速率即使高速公路有很多车道带宽大但由于种种原因如交通拥堵实际通过的车辆可能并不多吞吐量小同样网络带宽大并不一定意味着吞吐量大实际的吞吐量还受到网络负载设备性能等因素的影响时延类比邮寄包裹的传递时间时延是指数据从发送方传输到接收方所需的时间就像你从邮局寄出一个包裹到收件人收到这个包裹之间的时间差网络时延也包括发送传输路由和接收等多个环节时延越小数据传输的速度就越快时延可以细分为几种类型传播时延信号在介质中传播所需的时间类似于包裹在运输中的时间传播时延信道长度电磁波在信道上的传播速率传输时延也称发送时延数据进入传输介质所需的时间类似于包裹从寄件人手中交到邮局手中的时间发送时延分组长度发送速率处理时延路由器等设备处理数据包所需的时间类似于邮局处理包裹的时间排队时延数据包在路由器队列中等待处理的时间类似于包裹在邮局排队等待处理的时间时延带宽积时延带宽积是指网络路径中能够填满整个路径的最大数据量它是网络带宽单位时间内可传输的数据量和时延数据从发送方到接收方所需的时间的乘积这个指标反映了网络的管道中可以同时容纳的数据量公式时延带宽积带宽时延其中带宽网络可以传输数据的速率通常以比特每秒为单位时延数据从发送方传输到接收方所需的时间通常以秒为单位计算机网络分层结构计算机网络的各层及其协议的集合称为计算机网络的体系结构计算机网络协议接口服务的概念为了在网络中进行数据交换而建立的这些规则标准或约定称为网络协议是控制在对等实体之间进行通信的规则的集合是水平的协议协议由三部分组成语法语义同步时序语法数据与控制信息的格式语义需要发出何种控制信息完成何种动作及做出何种应答同步时序执行各种操作的条件时序关系即事件实现顺序的详细说明接口在计算机网络中接口定义了设备之间如何物理连接如网线插口无线信号和如何逻辑交互如接口硬件接口网络接口卡以太网接口接口等软件接口应用程序编程接口比如操作系统提供的网络编程接口如用于应用程序与网络协议栈的交互服务服务是指下层为紧邻的上层提供的功能调用是垂直的对等实体在协议的控制下使得本层能为上层提供服务但要实现本层协议还需要使用下层提供的服务此时必须要与下层交换一些命令这些命令称为服务原语服务原语分为四种基本类型请求上层实体向下层实体发出的请求以启动某项服务指示下层实体通知上层实体发生了一些事件通常是对请求的响应或通知状态变化响应上层实体对下层实体的指示作出的回应确认下层实体对上层实体的请求作出的确认计算机网络提供的服务可按照以下方式分为三种面向连接服务和无连接服务面向连接服务双方必须先建立连接分配相应的资源无连接服务通信双方不需要先建立连接需要发送数据时可直接发送可靠服务和不可靠服务总的来说可靠服务就是要确保数据能够准确地发送到目的地其中包含了纠错检错的功能不可靠服务就是将数据尽量发送到目的地是一种尽力而为有应答服务和无应答服务指接收方在收到数据后向发送方给出的相应的应答即为有应答服务参考模型和模型定义模型是国际标准化组织制定的一个标准网络模型它将网络通信分为七个层次每一层都有特定的功能和协议这种分层结构有助于理解和设计复杂的网络系统七层结构物理层功能传输比特流和负责物理连接和介质传输类比电缆或无线电波就像邮递员在城市之间传递信件数据链路层功能提供可靠的数据传输负责错误检测和纠正以及介质访问控制类比邮局负责将信件送到本地地址网络层功能路径选择和数据包转发负责逻辑地址地址类比邮政系统负责将信件从一个城市发送到另一个城市传输层功能提供端到端通信负责数据传输的可靠性和流控制类比在邮政系统中保证信件按正确顺序到达收件人会话层功能管理会话和对话控制负责建立维护和终止会话类比电话系统中的通话管理表示层功能数据格式转换和加密解密负责数据表示的标准化类比翻译员将信息从一种语言转换成另一种语言应用层功能提供网络服务和应用程序接口类比用户直接与应用程序互动比如电子邮件客户端模型定义模型是互联网的基础协议模型由传输控制协议和互联网协议组成它将网络通信分为四个层次与模型类似但层次更少四层结构链路层功能管理网络接口和数据链路类似于模型的物理层和数据链路层类比将信件送到本地地址网络层功能路径选择和数据包转发负责逻辑地址地址类比将信件从一个城市发送到另一个城市传输层功能提供端到端通信负责数据传输的可靠性和流控制类比保证信件按正确顺序到达收件人应用层功能提供网络服务和应用程序接口结合了模型的会话层表示层和应用层功能类比用户直接与应用程序互动比如电子邮件客户端对比与联系相似点分层结构两者都采用分层结构每一层都有特定功能独立运作模块化设计分层设计使得每一层可以独立开发和修改提高系统的灵活性和可维护性不同点层次数量模型有七层模型有四层标准化过程模型是一个理论模型用于指导网络标准的制定模型是实际应用的模型已经广泛应用于互联网功能分配模型的每一层功能更细化而模型将一些功能合并在一起例如应用层包含了会话层和表示层的功能实例解释发送电子邮件的过程模型应用层用户在邮件客户端中撰写邮件并点击发送表示层邮件数据进行编码和加密会话层建立与邮件服务器的会话传输层使用协议将邮件分段并传输网络层使用协议将数据包路由到目标邮件服务器数据链路层数据包通过本地网络传输物理层数据以电信号或无线电波形式传输模型应用层用户在邮件客户端中撰写邮件并点击发送传输层使用协议将邮件分段并传输网络层使用协议将数据包路由到目标邮件服务器链路层数据包通过本地网络传输',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-09-03 11:01:34',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-block content
-  #post
-    if top_img === false || page.bilibili_bg
-      include includes/header/post-info.pug
-    if theme.post_head_ai_description
-      include includes/anzhiyu/ai-info.pug
-    - let url = page.copyright_url || page.permalink
-    article#article-container.post-content(itemscope itemtype=url_for(url))
-      header
-        if (theme.post_meta.post.categories && page.categories && page.categories.data.length > 0)
-          each item, index in page.categories.data
-            a(href=url_for(item.path) itemprop="url").post-meta-categories #[=item.name]
-        if (theme.post_meta.page.tags)
-          each item, index in page.tags.data
-            a(href=url_for(item.path) tabindex="-1" itemprop="url")=item.name
-        h1#CrawlerTitle(itemprop="name headline")= page.title || _p('no_title')
-        - let author = page.copyright_author || config.author
-        span(itemprop="author" itemscope itemtype="http://schema.org/Person")=author
-        if (theme.post_meta.post.date_type)
-          if (theme.post_meta.post.date_type === 'both')
-            time(itemprop="dateCreated datePublished" datetime=date_xml(page.date) title=_p('post.created') + ' ' + full_date(page.date))=date(page.date, config.date_format)
-            time(itemprop="dateCreated datePublished" datetime=date_xml(page.updated) title=_p('post.updated') + ' ' + full_date(page.updated))=date(page.updated, config.date_format)
-          else
-            - let data_type_update = theme.post_meta.post.date_type === 'updated'
-            - let date_type = data_type_update ? 'updated' : 'date'
-            time(itemprop="dateCreated datePublished" datetime=date_xml(page[date_type]) title=date_title + ' ' + full_date(page[date_type]))=date(page[date_type], config.date_format)
-      !=page.content
-
-    include includes/post/post-copyright.pug
-
-    //- ad
-    if theme.ad && theme.ad.post
-      .ads-wrap!=theme.ad.post
-
-    if theme.post_pagination
-      include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
-
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache: true})
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
       
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">Hexo</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> Newest Comments</span></div><div class="aside-list"><span>loading...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/09/"><span class="card-archive-list-date">September 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="article-meta tags"></span></div></div><h1 class="post-title" itemprop="name headline">计算机网络概述</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2024-09-03T02:54:01.000Z" title="Created 2024-09-03 10:54:01">2024-09-03</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2024-09-03T03:01:34.995Z" title="Updated 2024-09-03 11:01:34">2024-09-03</time></span></div><div class="meta-secondline"><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为长沙"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>长沙</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src=""></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="http://example.com/2024/09/03/My-New-Post/"><header><h1 id="CrawlerTitle" itemprop="name headline">计算机网络概述</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">John Doe</span><time itemprop="dateCreated datePublished" datetime="2024-09-03T02:54:01.000Z" title="Created 2024-09-03 10:54:01">2024-09-03</time><time itemprop="dateCreated datePublished" datetime="2024-09-03T03:01:34.995Z" title="Updated 2024-09-03 11:01:34">2024-09-03</time></header><h1 id="计算机网络概述"><a href="#计算机网络概述" class="headerlink" title="计算机网络概述"></a>计算机网络概述</h1><p><strong>计算机网络</strong>由若干节点和连接这些节点的链路组成网络中的节点可以是计算机、集线器、交换机和路由器等</p>
+<p>网络把许多计算机连接在一起，而互联网则把许多网络通过路由器连接在一起，与网络相连的计算机通常称之为主机</p>
+<h2 id="互联网的组成"><a href="#互联网的组成" class="headerlink" title="互联网的组成"></a>互联网的组成</h2><p><strong>边缘部分</strong>：所有连接在互联网上的主机组成这部分是用户直接使用的，用来进行通信和资源共享</p>
+<p><strong>核心部分：</strong> 为边缘部分提供服务，由大量网络和连接这些网络的路由器组成</p>
+<h2 id="计算机网络的功能"><a href="#计算机网络的功能" class="headerlink" title="计算机网络的功能"></a>计算机网络的功能</h2><p>1.数据通信</p>
+<p>2.资源共享</p>
+<p>3.分布式处理</p>
+<p>4.提高可靠性</p>
+<p>5.负载均衡</p>
+<h2 id="互联网的核心部分"><a href="#互联网的核心部分" class="headerlink" title="互联网的核心部分"></a>互联网的核心部分</h2><p>互联网核心部分起重要作用的是<strong>路由器</strong></p>
+<p>它对收到的分组进行储存转发来实现分组交换</p>
+<p>首先学习电路交换</p>
+<h3 id="电路交换"><a href="#电路交换" class="headerlink" title="电路交换"></a>电路交换</h3><p><strong>类比：打电话</strong></p>
+<p>想象你在打电话。你拨打某人的号码后，电话公司会在你们之间建立一条专用的线路。这条线路在通话过程中完全属于你们，其他人无法使用。通话结束后，这条线路才会释放。</p>
+<p>实现步骤：<br><strong>连接建立</strong>：在通信开始前，需要建立一个专用的通道</p>
+<p><strong>数据传输</strong>：一旦连接建立，通信双方就有一个固定的、专用的路径进行数据传输。这个过程数据是持续传输的</p>
+<p><strong>连接释放</strong>：通信结束后，释放专用的通道</p>
+<p>电路交换的优点是通信过程中不会有延迟，因为线路是专用的，但缺点是资源利用率低，因为即使没有数据传输，线路也被占用。</p>
+<h2 id="报文交换"><a href="#报文交换" class="headerlink" title="报文交换"></a>报文交换</h2><p>数据交换的单位是<strong>报文</strong> ，用户数据加上源地址、目的地址等信息后封装成<strong>报文</strong></p>
+<p><strong>类比：邮寄包裹</strong></p>
+<p>假设你要邮寄一个大包裹。你将包裹寄到邮局，邮局会根据包裹的目的地将它转发到下一个邮局，直到最终到达收件人。这过程中，包裹可能会在各个邮局停留、等待处理。</p>
+<p>实现步骤：</p>
+<p>采用<strong>存储转发技术</strong> </p>
+<ul>
+<li><strong>存储和转发</strong>：报文在每个节点上被完全接收、存储，然后再转发到下一个节点。</li>
+<li><strong>动态路由选择</strong>：每个节点根据当前的网络情况决定报文的下一跳路径。</li>
+</ul>
+<p>报文交换的优点是灵活，可以根据网络情况动态选择路径，适合传输较大数据块，但缺点是延迟较大，因为每个节点需要存储和处理整个报文。</p>
+<h3 id="分组交换"><a href="#分组交换" class="headerlink" title="分组交换"></a>分组交换</h3><p>分组交换也采用存储转发的技术但解决了报文过长的问题</p>
+<p><strong>类比：发送电子邮件</strong></p>
+<p>假设你要发送一封长电子邮件。你将邮件拆分成多个小段（称为分组），每个分组独立发送。这些分组可能通过不同的路径到达收件人，收件人将这些分组重新组合成完整的邮件。</p>
+<p>实现步骤</p>
+<ul>
+<li><strong>数据拆分</strong>：将数据分割成较小的分组，每个分组独立传输。</li>
+<li><strong>独立传输</strong>：分组独立地在网络中传输，可以通过不同的路径到达目的地。</li>
+<li><strong>重组</strong>：在目的地，分组按序号重新组合成完整的数据。</li>
+</ul>
+<h2 id="计算机网络的性能指标"><a href="#计算机网络的性能指标" class="headerlink" title="计算机网络的性能指标"></a>计算机网络的性能指标</h2><h3 id="带宽（Bandwidth）"><a href="#带宽（Bandwidth）" class="headerlink" title="带宽（Bandwidth）"></a>带宽（Bandwidth）</h3><p><strong>类比：高速公路的车道数量</strong></p>
+<p>带宽是指单位时间内网络可以传输的数据量，通常以比特每秒（bps）、千比特每秒（Kbps）、兆比特每秒（Mbps）等表示。就像高速公路的车道数量决定了同时可以通过的车辆数量，带宽决定了同时可以传输的数据量。带宽越大，网络可以传输的数据量就越多。</p>
+<h3 id="吞吐量（Throughput）"><a href="#吞吐量（Throughput）" class="headerlink" title="吞吐量（Throughput）"></a>吞吐量（Throughput）</h3><p><strong>类比：高速公路上的实际车流量</strong></p>
+<p>吞吐量是实际通过网络的数据传输速率。即使高速公路有很多车道（带宽大），但由于种种原因（如交通拥堵），实际通过的车辆可能并不多（吞吐量小）。同样，网络带宽大并不一定意味着吞吐量大，实际的吞吐量还受到网络负载、设备性能等因素的影响。</p>
+<h3 id="时延（Latency）"><a href="#时延（Latency）" class="headerlink" title="时延（Latency）"></a>时延（Latency）</h3><p><strong>类比：邮寄包裹的传递时间</strong></p>
+<p>时延是指数据从发送方传输到接收方所需的时间。就像你从邮局寄出一个包裹到收件人收到这个包裹之间的时间差，网络时延也包括发送、传输、路由和接收等多个环节。时延越小，数据传输的速度就越快。</p>
+<p>时延可以细分为几种类型：</p>
+<ul>
+<li><strong>传播时延</strong>：信号在介质中传播所需的时间，类似于包裹在运输中的时间。传播时延&#x3D;信道长度&#x2F;电磁波在信道上的传播速率</li>
+<li><strong>传输时延</strong>：也称<strong>发送时延</strong>数据进入传输介质所需的时间，类似于包裹从寄件人手中交到邮局手中的时间。发送时延&#x3D;分组长度&#x2F;发送速率</li>
+<li><strong>处理时延</strong>：路由器等设备处理数据包所需的时间，类似于邮局处理包裹的时间。</li>
+<li><strong>排队时延</strong>：数据包在路由器队列中等待处理的时间，类似于包裹在邮局排队等待处理的时间。</li>
+</ul>
+<h2 id="时延带宽积："><a href="#时延带宽积：" class="headerlink" title="时延带宽积："></a>时延带宽积：</h2><p>时延带宽积是指网络路径中，能够填满整个路径的最大数据量。它是网络带宽（单位时间内可传输的数据量）和时延（数据从发送方到接收方所需的时间）的乘积。这个指标反映了网络的“管道”中可以同时容纳的数据量。</p>
+<p><strong>公式：</strong></p>
+<p>时延带宽积&#x3D;带宽×时延</p>
+<p>其中：</p>
+<ul>
+<li><strong>带宽</strong>：网络可以传输数据的速率，通常以比特每秒（bps）为单位。</li>
+<li><strong>时延</strong>：数据从发送方传输到接收方所需的时间，通常以秒（s）为单位。</li>
+</ul>
+<h1 id="计算机网络分层结构"><a href="#计算机网络分层结构" class="headerlink" title="计算机网络分层结构"></a>计算机网络分层结构</h1><p>计算机网络的各层及其协议的集合称为计算机网络的体系结构</p>
+<h2 id="计算机网络协议、接口、服务的概念"><a href="#计算机网络协议、接口、服务的概念" class="headerlink" title="计算机网络协议、接口、服务的概念"></a>计算机网络协议、接口、服务的概念</h2><p>为了在网络中进行数据交换而建立的这些规则、标准、或约定称为网络协议、是控制在对等实体之间进行通信的规则的集合是水平的。</p>
+<h3 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h3><p>协议由三部分组成：语法、语义、同步(时序)</p>
+<p>语法：数据与控制信息的格式</p>
+<p>语义：需要发出何种控制信息、完成何种动作及做出何种应答</p>
+<p>同步(时序)：执行各种操作的条件、时序关系、即事件实现顺序的详细说明</p>
+<h3 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h3><p>在计算机网络中，接口定义了设备之间如何物理连接（如网线插口、无线信号）和如何逻辑交互（如API接口）。</p>
+<ul>
+<li><strong>硬件接口</strong>：网络接口卡（NIC），以太网接口，Wi-Fi接口等。</li>
+<li><strong>软件接口</strong>：应用程序编程接口（API），比如操作系统提供的网络编程接口（如Socket API），用于应用程序与网络协议栈的交互。</li>
+</ul>
+<h3 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h3><p><strong>服务</strong>是指下层为紧邻的上层提供的功能调用，是垂直的。对等实体在协议的控制下使得本层能为上层提供服务，但要实现本层协议，还需要使用下层提供的服务，此时必须要与下层交换一些命令，这些命令称为<strong>服务原语</strong></p>
+<p>服务原语分为四种基本类型：</p>
+<ol>
+<li><strong>请求（Request）</strong>：上层实体向下层实体发出的请求，以启动某项服务。</li>
+<li><strong>指示（Indication）</strong>：下层实体通知上层实体发生了一些事件，通常是对请求的响应或通知状态变化。</li>
+<li><strong>响应（Response）</strong>：上层实体对下层实体的指示作出的回应。</li>
+<li><strong>确认（Confirmation）</strong>：下层实体对上层实体的请求作出的确认</li>
+</ol>
+<p>计算机网络提供的服务可按照以下方式分为三种</p>
+<p><strong>面向连接服务和无连接服务</strong>：</p>
+<p>面向连接服务：双方必须先建立连接，分配相应的资源</p>
+<p>无连接服务：通信双方不需要先建立连接，需要发送数据时可直接发送</p>
+<p><strong>可靠服务和不可靠服务</strong></p>
+<p>总的来说可靠服务就是要确保数据能够准确地发送到目的地，其中包含了纠错检错的功能。</p>
+<p>不可靠服务就是将数据尽量发送到目的地，是一种尽力而为</p>
+<p><strong>有应答服务和无应答服务</strong></p>
+<p>指接收方在收到数据后向发送方给出的相应的应答，即为有应答服务</p>
+<h1 id="OSI-ISO参考模型和TCP-IP模型"><a href="#OSI-ISO参考模型和TCP-IP模型" class="headerlink" title="OSI&#x2F;ISO参考模型和TCP&#x2F;IP模型"></a>OSI&#x2F;ISO参考模型和TCP&#x2F;IP模型</h1><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>ISO&#x2F;OSI模型是国际标准化组织（ISO）制定的一个标准网络模型，它将网络通信分为七个层次，每一层都有特定的功能和协议。这种分层结构有助于理解和设计复杂的网络系统。</p>
+<h4 id="七层结构"><a href="#七层结构" class="headerlink" title="七层结构"></a>七层结构</h4><ol>
+<li><p><strong>物理层（Physical Layer）</strong></p>
+<ul>
+<li><strong>功能</strong>：传输比特流（0和1），负责物理连接和介质传输。</li>
+<li><strong>类比</strong>：电缆或无线电波，就像邮递员在城市之间传递信件。</li>
+</ul>
+</li>
+<li><p><strong>数据链路层（Data Link Layer）</strong></p>
+<ul>
+<li><strong>功能</strong>：提供可靠的数据传输，负责错误检测和纠正，以及介质访问控制。</li>
+<li><strong>类比</strong>：邮局负责将信件送到本地地址。</li>
+</ul>
+</li>
+<li><p><strong>网络层（Network Layer）</strong></p>
+<ul>
+<li><strong>功能</strong>：路径选择和数据包转发，负责逻辑地址（IP地址）。</li>
+<li><strong>类比</strong>：邮政系统负责将信件从一个城市发送到另一个城市。</li>
+</ul>
+</li>
+<li><p><strong>传输层（Transport Layer）</strong></p>
+<ul>
+<li><strong>功能</strong>：提供端到端通信，负责数据传输的可靠性和流控制。</li>
+<li><strong>类比</strong>：在邮政系统中，保证信件按正确顺序到达收件人。</li>
+</ul>
+</li>
+<li><p><strong>会话层（Session Layer）</strong></p>
+<ul>
+<li><strong>功能</strong>：管理会话和对话控制，负责建立、维护和终止会话。</li>
+<li><strong>类比</strong>：电话系统中的通话管理。</li>
+</ul>
+</li>
+<li><p><strong>表示层（Presentation Layer）</strong></p>
+<ul>
+<li><strong>功能</strong>：数据格式转换和加密解密，负责数据表示的标准化。</li>
+<li><strong>类比</strong>：翻译员将信息从一种语言转换成另一种语言。</li>
+</ul>
+</li>
+<li><p><strong>应用层（Application Layer）</strong></p>
+<ul>
+<li><strong>功能</strong>：提供网络服务和应用程序接口。</li>
+<li><strong>类比</strong>：用户直接与应用程序互动，比如电子邮件客户端。</li>
+</ul>
+</li>
+</ol>
+<h3 id="TCP-IP模型"><a href="#TCP-IP模型" class="headerlink" title="TCP&#x2F;IP模型"></a>TCP&#x2F;IP模型</h3><h4 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h4><p>TCP&#x2F;IP模型是互联网的基础协议模型，由传输控制协议（TCP）和互联网协议（IP）组成。它将网络通信分为四个层次，与OSI模型类似，但层次更少。</p>
+<h4 id="四层结构"><a href="#四层结构" class="headerlink" title="四层结构"></a>四层结构</h4><ol>
+<li><p><strong>链路层（Link Layer）</strong></p>
+<ul>
+<li><strong>功能</strong>：管理网络接口和数据链路，类似于OSI模型的物理层和数据链路层。</li>
+<li><strong>类比</strong>：将信件送到本地地址。</li>
+</ul>
+</li>
+<li><p><strong>网络层（Internet Layer）</strong></p>
+<ul>
+<li><strong>功能</strong>：路径选择和数据包转发，负责逻辑地址（IP地址）。</li>
+<li><strong>类比</strong>：将信件从一个城市发送到另一个城市。</li>
+</ul>
+</li>
+<li><p><strong>传输层（Transport Layer）</strong></p>
+<ul>
+<li><strong>功能</strong>：提供端到端通信，负责数据传输的可靠性和流控制。</li>
+<li><strong>类比</strong>：保证信件按正确顺序到达收件人。</li>
+</ul>
+</li>
+<li><p><strong>应用层（Application Layer）</strong></p>
+<ul>
+<li><strong>功能</strong>：提供网络服务和应用程序接口，结合了OSI模型的会话层、表示层和应用层功能。</li>
+<li><strong>类比</strong>：用户直接与应用程序互动，比如电子邮件客户端。</li>
+</ul>
+</li>
+</ol>
+<h3 id="对比与联系"><a href="#对比与联系" class="headerlink" title="对比与联系"></a>对比与联系</h3><h4 id="相似点"><a href="#相似点" class="headerlink" title="相似点"></a>相似点</h4><ol>
+<li><strong>分层结构</strong>：两者都采用分层结构，每一层都有特定功能，独立运作。</li>
+<li><strong>模块化设计</strong>：分层设计使得每一层可以独立开发和修改，提高系统的灵活性和可维护性。</li>
+</ol>
+<h4 id="不同点"><a href="#不同点" class="headerlink" title="不同点"></a>不同点</h4><ol>
+<li><strong>层次数量</strong>：OSI模型有七层，TCP&#x2F;IP模型有四层。</li>
+<li><strong>标准化过程</strong>：OSI模型是一个理论模型，用于指导网络标准的制定；TCP&#x2F;IP模型是实际应用的模型，已经广泛应用于互联网。</li>
+<li><strong>功能分配</strong>：OSI模型的每一层功能更细化，而TCP&#x2F;IP模型将一些功能合并在一起（例如，应用层包含了会话层和表示层的功能）。</li>
+</ol>
+<h3 id="实例解释"><a href="#实例解释" class="headerlink" title="实例解释"></a>实例解释</h3><h4 id="发送电子邮件的过程"><a href="#发送电子邮件的过程" class="headerlink" title="发送电子邮件的过程"></a>发送电子邮件的过程</h4><ul>
+<li><p><strong>OSI模型</strong>：</p>
+<ul>
+<li>应用层：用户在邮件客户端中撰写邮件并点击发送。</li>
+<li>表示层：邮件数据进行编码和加密。</li>
+<li>会话层：建立与邮件服务器的会话。</li>
+<li>传输层：使用TCP协议将邮件分段并传输。</li>
+<li>网络层：使用IP协议将数据包路由到目标邮件服务器。</li>
+<li>数据链路层：数据包通过本地网络传输。</li>
+<li>物理层：数据以电信号或无线电波形式传输。</li>
+</ul>
+</li>
+<li><p><strong>TCP&#x2F;IP模型</strong>：</p>
+<ul>
+<li>应用层：用户在邮件客户端中撰写邮件并点击发送。</li>
+<li>传输层：使用TCP协议将邮件分段并传输。</li>
+<li>网络层：使用IP协议将数据包路由到目标邮件服务器。</li>
+<li>链路层：数据包通过本地网络传输。</li>
+</ul>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">John Doe</div><div class="post-copyright__author_desc"></div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://example.com/2024/09/03/My-New-Post/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://example.com/2024/09/03/My-New-Post/')">计算机网络概述</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://example.com/2024/09/03/My-New-Post/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=计算机网络概述&amp;url=http://example.com/2024/09/03/My-New-Post/&amp;pic=" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"></div></div></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2024/09/03/hello-world/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__description"></div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://bu.dusays.com/2023/05/13/645fa415e8694.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">计算机网络概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-number">1.1.</span> <span class="toc-text">互联网的组成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="toc-number">1.2.</span> <span class="toc-text">计算机网络的功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E6%A0%B8%E5%BF%83%E9%83%A8%E5%88%86"><span class="toc-number">1.3.</span> <span class="toc-text">互联网的核心部分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2"><span class="toc-number">1.3.1.</span> <span class="toc-text">电路交换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E6%96%87%E4%BA%A4%E6%8D%A2"><span class="toc-number">1.4.</span> <span class="toc-text">报文交换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2"><span class="toc-number">1.4.1.</span> <span class="toc-text">分组交换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="toc-number">1.5.</span> <span class="toc-text">计算机网络的性能指标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%A6%E5%AE%BD%EF%BC%88Bandwidth%EF%BC%89"><span class="toc-number">1.5.1.</span> <span class="toc-text">带宽（Bandwidth）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%9E%E5%90%90%E9%87%8F%EF%BC%88Throughput%EF%BC%89"><span class="toc-number">1.5.2.</span> <span class="toc-text">吞吐量（Throughput）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E5%BB%B6%EF%BC%88Latency%EF%BC%89"><span class="toc-number">1.5.3.</span> <span class="toc-text">时延（Latency）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E5%BB%B6%E5%B8%A6%E5%AE%BD%E7%A7%AF%EF%BC%9A"><span class="toc-number">1.6.</span> <span class="toc-text">时延带宽积：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84"><span class="toc-number">2.</span> <span class="toc-text">计算机网络分层结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">2.1.</span> <span class="toc-text">计算机网络协议、接口、服务的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%8F%E8%AE%AE"><span class="toc-number">2.1.1.</span> <span class="toc-text">协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%8F%A3"><span class="toc-number">2.1.2.</span> <span class="toc-text">接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.1.3.</span> <span class="toc-text">服务</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#OSI-ISO%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B%E5%92%8CTCP-IP%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">OSI&#x2F;ISO参考模型和TCP&#x2F;IP模型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">3.0.0.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%83%E5%B1%82%E7%BB%93%E6%9E%84"><span class="toc-number">3.0.0.2.</span> <span class="toc-text">七层结构</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP-IP%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.0.1.</span> <span class="toc-text">TCP&#x2F;IP模型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-1"><span class="toc-number">3.0.1.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E5%B1%82%E7%BB%93%E6%9E%84"><span class="toc-number">3.0.1.2.</span> <span class="toc-text">四层结构</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E6%AF%94%E4%B8%8E%E8%81%94%E7%B3%BB"><span class="toc-number">3.0.2.</span> <span class="toc-text">对比与联系</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B8%E4%BC%BC%E7%82%B9"><span class="toc-number">3.0.2.1.</span> <span class="toc-text">相似点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8D%E5%90%8C%E7%82%B9"><span class="toc-number">3.0.2.2.</span> <span class="toc-text">不同点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B%E8%A7%A3%E9%87%8A"><span class="toc-number">3.0.3.</span> <span class="toc-text">实例解释</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%91%E9%80%81%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="toc-number">3.0.3.1.</span> <span class="toc-text">发送电子邮件的过程</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/2024/09/03/My-New-Post/" title="计算机网络概述">计算机网络概述</a><time datetime="2024-09-03T02:54:01.000Z" title="Created 2024-09-03 10:54:01">2024-09-03</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2024/09/03/hello-world/" title="Hello World">Hello World</a><time datetime="2024-09-03T02:38:23.579Z" title="Created 2024-09-03 10:38:23">2024-09-03</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2020 - 2024 By <a class="footer-bar-link" href="/" title="John Doe" target="_blank">John Doe</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">Articles</div><div class="length-num">2</div></a><a href="/tags/" title="tag"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/" title="category"><div class="headline">Categories</div><div class="length-num">0</div></a></div><span class="sidebar-menu-item-title">Function</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="Display Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>Display Mode</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><span class="sidebar-menu-item-title">标签</span></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/01/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2020 By 安知鱼 V1.6.12",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 John Doe 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
